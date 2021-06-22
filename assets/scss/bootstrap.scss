@@ -1,0 +1,164 @@
+@import "../framework-css/bootstrap/scss/bootstrap.scss";
+
+//Gunakan jika ada perubahan yang penting dalam css jika tidak jangan menggunakan scss
+//jika ingin Compiled install menggunkan node js jika tidak memiliki npm jika sudah silahkan ketik diterminal npm install -g sass 
+//Create By Kitchen Batara
+
+a{
+    text-decoration: none !important;
+}
+
+.a-footer{
+    color: black;
+}
+
+.bg-bottom-footer{
+    background-color: red;
+}
+
+.avatar
+{
+    font-size: 1rem;
+
+    display: inline-flex;
+
+    width: 48px; 
+    height: 48px;
+
+    color: #fff;
+    border-radius: .375rem;
+    background-color: #adb5bd;
+
+    align-items: center;
+    justify-content: center;
+}
+.avatar img
+{
+    width: 100%;
+
+    border-radius: .375rem;
+}
+.avatar + .avatar-content
+{
+    display: inline-block;
+
+    margin-left: .75rem;
+}
+
+.avatar-lg
+{
+    font-size: .875rem; 
+
+    width: 58px;
+    height: 58px;
+}
+
+.avatar-sm
+{
+    font-size: .875rem; 
+
+    width: 36px;
+    height: 36px;
+}
+
+.avatar-group .avatar
+{
+    position: relative;
+    z-index: 2;
+
+    border: 2px solid #fff;
+}
+.avatar-group .avatar:hover
+{
+    z-index: 3;
+}
+
+.avatar-group .avatar + .avatar
+{
+    margin-left: -1rem;
+}
+
+.bg-recommended{
+    background-image: linear-gradient(to bottom right, #FF3300, #FF3399);
+}
+
+.kategori-size{
+    width: 12rem;
+    height: 4rem;
+}
+
+.bg-card-1{
+    background-image: linear-gradient(to bottom right, #33CC33, #0066CC);
+}
+
+.bg-card-2{
+    background-image: linear-gradient(to bottom right, #3333FF, #00FFCC);
+}
+
+.bg-card-3{
+    background-image: linear-gradient(to bottom right, #CC0000, #FF6600);
+}
+
+.bg-card-4{
+    background-image: linear-gradient(to bottom right, #660066, #6600CC);
+}
+
+.bg-card-5{
+    background-image: linear-gradient(to bottom right, #3333FF, #CC00FF);
+}
+
+.bg-card-6{
+    background-image: linear-gradient(to bottom right, #FF0066, #FFCC00);
+}
+
+.bg-card-7{
+    background-image: linear-gradient(to bottom right, #b1ff33, #fc8f50);
+}
+
+.bg-card-8{
+    background-image: linear-gradient(to bottom right, #fffc33, #ff5e00);
+}
+
+.bg-card-9{
+    background-image: linear-gradient(to bottom right, #ff334e, #ff8800);
+}
+
+.bg-card-10{
+    background-image: linear-gradient(to bottom right, #a7ff33, #ffd000);
+}
+
+.bg-card-11{
+    background-image: linear-gradient(to bottom right, #ff3355, #ff0022);
+}
+
+.bg-card-12{
+    background-image: linear-gradient(to bottom right, #33ffc2, #ffc400);
+}
+
+.bg-card-13{
+    background-image: linear-gradient(to bottom right, #96ff33, #fcb141);
+}
+
+.bg-card-14{
+    background-image: linear-gradient(to bottom right, #ffad33, #ff002b);
+}
+
+/* The heart of the matter */
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .testimonial-group > .row > .kategori-size {
+    display: inline-block;
+    float: none;
+  }
+  
+  /* Decorations */
+  .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
+  .col-xs-4:nth-child(3n+1) { background: #c69; }
+  .col-xs-4:nth-child(3n+2) { background: #9c6; }
+  .col-xs-4:nth-child(3n+3) { background: #69c; }
+
+.btn-custom{
+    $btn-border-width: 100px;
+}
