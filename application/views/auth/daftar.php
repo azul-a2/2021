@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="password">Password</label>
-                    <input class="form-control form-control-sm <?php echo form_error('password') ? 'border border-danger' : null ?>" type="password" nama="password" value="<?php echo set_value('password') ?>">
+                    <input class="form-control form-control-sm <?php echo form_error('password') ? 'border border-danger' : null ?>" type="password" name="password" value="<?php echo set_value('password') ?>">
                     <div id="passwordHelpBlock" class="form-text text-danger">
                         <?php echo form_error('password')?>
                     </div>
@@ -26,7 +26,7 @@
 
                 <div class="form-group">
                     <label class="form-label" for="passconf">Konfirmasi Password</label>
-                    <input class="form-control form-control-sm <?php echo form_error('passconf') ? 'border border-danger' : null ?>" type="password" nama="passconf" value="<?php echo set_value('passconf') ?>">
+                    <input class="form-control form-control-sm <?php echo form_error('passconf') ? 'border border-danger' : null ?>" type="password" name="passconf" value="<?php echo set_value('passconf') ?>">
                     <div id="passwordHelpBlock" class="form-text text-danger">
                         <?php echo form_error('passconf')?>
                     </div>

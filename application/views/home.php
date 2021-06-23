@@ -339,3 +339,28 @@
         </div>
     </div>
 </section>
+
+
+<table>
+    <tr>
+        <td>No</td>
+        <td>id kota</td>
+        <td>id provinsi</td>
+        <td>nama kota</td>
+    </tr>
+    <?php
+    foreach ($product as $i => $product)
+    {
+        ?>
+        <tr>
+            <td><?php echo ++$i; ?></td>
+            <td><?php echo $product->title; ?></td>
+            <td><img src="<?php echo base_url()?>./assets/img/jpg/product/<?php echo $product->photo1;?>" alt=""></td>
+            <td><?php echo $product->price?></td>	
+        </tr>
+        <?php
+    }?>
+</table>
+
+
+                
