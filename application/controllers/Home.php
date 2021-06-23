@@ -8,7 +8,7 @@ class Home extends CI_Controller
         $data['title'] = "Jual Beli Laku";
         $data['date'] = date('Y');
         //$data['user'] = $this->model;
-
+        
         $this->load->view('templates/header', $data);
         $this->load->view('home');
         $this->load->view('templates/footer');
