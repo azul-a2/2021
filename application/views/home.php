@@ -111,56 +111,21 @@
             <div class="card bg-recommended" style="width: 12rem;">
                 <p class="text-white fs-4">Rekomendasi Items</p>
             </div>
-            <div class="card" style="width: 14rem;">
-                <a href="??">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('/assets/img/jfif/macbook.jfif')?>" class="img-fluid rounded rounded-bottom">
-                        <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href="">Fusion Splicer Fujikura 22s</a></h5>
-                        <p class="card-text fs-5 fw-bold">$400</p>
-                        <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
-                    </div>
-                </a>
-            </div>
-            <div class="card" style="width: 14rem;">
-                <a href="??">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('/assets/img/jpg/fotomailaku.jpg')?>" class="img-fluid rounded rounded-bottom">
-                        <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href="">Fusion Splicer Fujikura 22s</a></h5>
-                        <p class="card-text fs-5 fw-bold">$400</p>
-                        <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
-                    </div>
-                </a>
-            </div>
-            <div class="card" style="width: 14rem;">
-                <a href="??">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('/assets/img/jpg/monitor.jpg')?>" class="img-fluid rounded rounded-bottom">
-                        <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href="">Fusion Splicer Fujikura 22s</a></h5>
-                        <p class="card-text fs-5 fw-bold">$400</p>
-                        <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
-                    </div>
-                </a>
-            </div>
-            <div class="card" style="width: 14rem;">
-                <a href="??">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('/assets/img/png/razer.png')?>" class="img-fluid rounded rounded-bottom">
-                        <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href="">Fusion Splicer Fujikura 22s</a></h5>
-                        <p class="card-text fs-5 fw-bold">$400</p>
-                        <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
-                    </div>
-                </a>
-            </div>
-            <div class="card" style="width: 14rem;">
-                <a href="??">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('/assets/img/jpg/nig.jpg')?>" class="img-fluid rounded rounded-bottom">
-                        <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href="">Fusion Splicer Fujikura 22s</a></h5>
-                        <p class="card-text fs-5 fw-bold">$4000000000</p>
-                        <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
-                    </div>
-                </a>
-            </div>
+            <?php
+            foreach ($product as $i => $product)
+            {?>
+                <div class="card" style="width: 14rem;">
+                    <a href="??">
+                        <div class="card-body">
+                            <img src="<?php echo base_url()?>./assets/img/jpg/product/<?php echo $product->photo1;?>" class="img-fluid rounded rounded-bottom">
+                            <h5 class="card-title"><a class="no-underline fs-6 fw-light text-dark" href=""><?php echo $product->title; ?></a></h5>
+                            <p class="card-text fs-5 fw-bold"><?php echo $product->price?></p>
+                            <button type="button" class="btn btn-outline-danger btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2 me-2"></i>Add to cart</button>
+                        </div>
+                    </a>
+                </div>
+                <?php
+            }?>
         </div>
     </div>
 </section>
