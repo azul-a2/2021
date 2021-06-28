@@ -132,7 +132,6 @@
 <!-- Kategori -->
 <section>
     <div class="container p-3">
-        <button></button>
         <div class="container-flued overflow-auto gap-2 d-flex flex-nowrap row">
             <div class="border rounded kategori-size d-flex align-items-center px-3 bg-card-1">
                 <div class="fw-bold text-white">
@@ -209,123 +208,11 @@
 </section>
 <!-- Hasil Kategori -->
 <section class="mb-3 bg-light">
-    <div class="container">
-        <div clas="d-flex">
-            <div class="gap-3 row">
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">
-                        Some quick example text to build on the card title and make up the bulk of the
-                        card's content.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </section>
 <!-- Mailaku News -->
 <section>
-    <div class="container p-3">
-        <div class="container-flued border rounded">
-            
-        </div>
-    </div>
+    
 </section>
-
-
-<table>
-    <tr>
-        <td>No</td>
-        <td>id kota</td>
-        <td>id provinsi</td>
-        <td>nama kota</td>
-    </tr>
-    <?php
-    foreach ($product as $i => $product)
-    {
-        ?>
-        <tr>
-            <td><?php echo ++$i; ?></td>
-            <td><?php echo $product->title; ?></td>
-            <td><img src="<?php echo base_url()?>./assets/img/jpg/product/<?php echo $product->photo1;?>" alt=""></td>
-            <td><?php echo $product->price?></td>	
-        </tr>
-        <?php
-    }?>
-</table>
-
 
                 
