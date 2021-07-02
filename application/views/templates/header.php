@@ -12,7 +12,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg bg-danger navber-light" id="navbar_top">
 		<div class="container">
-			<a href="" class="navbar-brand text-white">Beranda</a>
+			<a href="<?php echo base_url('')?>" class="navbar-brand text-white">Beranda</a>
 			<button class="navbar-toggler text-white fs-6 border border-1 rounded rounded-2 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
 				<span class="fa fa-home me-1"></span>
 				Menu
@@ -38,10 +38,10 @@
 							<i class="fas fa-user-circle fa-fw"></i>
 						</a>
 						<ul class="dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuButton2">
-							<li><a class="dropdown-item" href="<?php echo base_url("auth/login")?>">Login</a></li>
-							<li><a class="dropdown-item" href="<?php echo base_url("auth/daftar")?>">Daftar</a></li>
+							<li><a class="dropdown-item" href="<?php echo base_url("login")?>">Login</a></li>
+							<li><a class="dropdown-item" href="<?php echo base_url("daftar")?>">Daftar</a></li>
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="<?php echo base_url("auth/daftar/")?>" data-toggle="modal" data-target="#logoutModal">Logout</a></li>
+							<li><a class="dropdown-item" href="<?php echo base_url("daftar")?>" data-toggle="modal" data-target="#logoutModal">Logout</a></li>
 						</ul>
 					</li>
 				</ul>

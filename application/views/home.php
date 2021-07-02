@@ -104,7 +104,7 @@
         </div>
     </div>
 </section>
-<!-- Produk Baru -->
+<!-- Rekomendasi -->
 <section class="mb-3">
     <div class="bg-light p-3">
         <div class="container d-flex gap-3">
