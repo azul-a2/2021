@@ -56,14 +56,21 @@
 			<input class="form-control rounded rounded-pill w-50" type="text" placeholder="Pencarian">
 			<select class="form-select rounded rounded-pill w-25" name="" id="">
 				<option value="" selected>Semua Kategori</option>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
-				<option value=""></option>
+				<?php
+					foreach($kategori as $i => $kategori)
+					{?>
+						<option value="<?php echo $kategori->title?>"><?php echo $kategori->title?></option>	
+					<?php
+				}?>
 			</select>
 			<select class="form-select rounded rounded-pill w-25" name="" id="">
 				<option value="">Semua Lokasi</option>
+				<?php
+					foreach($region as $i => $region)
+					{?>
+						<option value="<?php echo $region->title?>"><?php echo $region->title?></option>	
+					<?php
+				}?>
 			</select>
 			<button class="btn btn-outline-danger rounded rounded-pill">
 				<i class="fa fa-search"></i>
