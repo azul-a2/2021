@@ -41,7 +41,9 @@
 							<li><a class="dropdown-item" href="<?php echo base_url("login")?>">Login</a></li>
 							<li><a class="dropdown-item" href="<?php echo base_url("daftar")?>">Daftar</a></li>
 							<li><hr class="dropdown-divider"></li>
+							<?php ?>
 							<li><a class="dropdown-item" href="<?php echo base_url("daftar")?>" data-toggle="modal" data-target="#logoutModal">Logout</a></li>
+							<?php ?>
 						</ul>
 					</li>
 				</ul>
