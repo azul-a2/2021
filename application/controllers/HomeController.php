@@ -11,18 +11,17 @@ class HomeController extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "Jual Beli Laku";
-        $data['date'] = date('Y');
-        $data['product'] = $this->Produk_model->tampil_data()->result();
-        $data['region'] = $this->HomeModel->tampil_region()->result();
-        $data['kategori'] = $this->HomeModel->tampil_kategori()->result();
+        $data = array(
+            'title' => "Jual Beli Laku",
+            'date' => date('Y'),
+            'rekomendasi_produk' => $this->HomeModel->rekomendasi_produk()->result(),
+            'baru_produk' => $this->HomeModel->news_produck()->result(),
+            'region' => $this->HomeModel->tampil_region()->result(),
+            'kategori' => $this->HomeModel->tampil_kategori()->result()
+        );
         
         $this->load->view('templates/header', $data);
-        $this->load->view('home', $data);
+        $this->load->view('contents/home');
         $this->load->view('templates/footer', $data);
     }
-
-
-
-   
 }

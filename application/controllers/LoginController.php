@@ -1,6 +1,6 @@
 <?php
-
-class Login extends CI_Controller{
+defined('BASEPATH') OR exit('no direct script access allowed');
+class LoginController extends CI_Controller{
 
     public function __construct(){
         parent::__construct();
@@ -9,7 +9,12 @@ class Login extends CI_Controller{
     }
 
     public function index(){
-       $this->load->view('login'); 
+        $data = array(
+            'title' => 'Daftar',
+            'date' => date('Y')
+        );
+
+        $this->load->view('contents/login'); 
     }
 
     public function logout(){
@@ -17,3 +22,5 @@ class Login extends CI_Controller{
         redirect(site_url('login'));
     }
 }
+
+

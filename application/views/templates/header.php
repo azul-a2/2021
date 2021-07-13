@@ -2,9 +2,12 @@
 <html lang="id">
 	<head>
 		<title> Mailaku - <?php echo $title ?></title>
+		<link rel="icon" href="<?php echo base_url('/public/img/logo/ico.png')?>">
 		<meta charset="UTF-8"/>
+        <script src=""></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="<?php echo base_url('/assets/css/main.css')?>" type="text/css">
+		<link rel="stylesheet" href="<?php echo base_url('/public/css/main.css')?>" type="text/css">
+        <link rel="stylesheet" href="<?php echo base_url('/public/css/skaleton.css')?>" type="text/css">
 		<link rel="stylesheet" href="<?php echo base_url('/assets/framework-css/fa/css/all.css')?>" type="text/css">
 	</head>
 <body>

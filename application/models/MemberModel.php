@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Member_model extends CI_Model{
+class MemberModel extends CI_Model{
     private $_table = "member"; 
 
     public $id;
@@ -10,22 +10,28 @@ class Member_model extends CI_Model{
     public $password;
     public $nama;
     public $email;
+    public $ip_created;
+    public $date_created;
     public $jkel;
-    public $almt;
     public $almt_kota;
     public $almt_telp;
-
+    
     public function save(){
         $post = $this->input->post();
+        //$time = time();
+        //$datestring = '%Y-%m-%d %H:%i:%s';
+
         $this->id = uniqid();
         $this->login = $post['login'];
-        $this->password = $post['password'];
+        $this->password = password_hash($post['password'], PASSWORD_BCRYPT);
         $this->nama = $post['nama'];
+        $this->ip_created = $this->input->ip_address();
+        $this->date_created = date('Y-m-d H:i:s');
         $this->email = $post['email'];
         $this->jkel = $post['jkel'];
-        $this->almt = $post['almt'];
         $this->almt_kota = $post['almt_kota'];
         $this->almt_telp = $post['almt_telp'];
+        
         return $this->db->insert($this->_table, $this);
     }
 
@@ -51,5 +57,9 @@ class Member_model extends CI_Model{
             $isPasswordTrue = password_verify($post["password"], $member->password);
         }
         return false;
+    }
+
+    private function hash_password($password){
+        return password_hash($password, PASSWORD_BCRYPT);   
     }
 }

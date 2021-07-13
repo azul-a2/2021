@@ -131,7 +131,7 @@
 		</footer>
 	</body>
 	<script src="<?php echo base_url('assets/framework-css/bootstrap/dist/js/bootstrap.js') ?>"></script>
-	<script src="<?php echo base_url('assets/js/jquery.js') ?>"></script>
-	<script src="<?php echo base_url('assets/js/modal-pop.js') ?>"></script>
-	<script src="<?php echo base_url('assets/js/fixed-top.js') ?>"></script>
+	<script src="<?php echo base_url('public/js/jquery.js') ?>"></script>
+	<script src="<?php echo base_url('public/js/modal-pop.js') ?>"></script>
+	<script src="<?php echo base_url('public/js/fixed-top.js') ?>"></script>
 </html>
